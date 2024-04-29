@@ -37,10 +37,10 @@ const SignInForm = ()=> {
 		<h2>{getGreeting()}</h2>
 		<form action="" className={styles.form} onSubmit={handleSubmit} noValidate> 
 			<label htmlFor="">Full Name:</label>
-			<input type="text" onChange={handleChange} onFocus={handleFocus} onBlur={handleBlur}value={user.fullname} ref={nameInput}/>
+			<input type="text" name="fullname" onChange={handleChange} onFocus={handleFocus} onBlur={handleBlur}value={user.fullname} ref={nameInput}/>
 
 			<label htmlFor="">Email:</label>
-			<input type="email" name="" id="" onChange={handleChange} value={user.email}/>
+			<input type="email" name="email" id="" onChange={handleChange} value={user.email}/>
 			<button>Submit</button>
 
 		</form>
